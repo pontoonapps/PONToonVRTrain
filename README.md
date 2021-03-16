@@ -33,3 +33,23 @@ Project Duration: 3.5 years
 Unreal version: 4.23.1 
 Platforms    : Windows, Android, Oculus Quest
 ```
+
+## Use notes
+### Event Manager BP
+The Event manager holds the information for the audio cues which will be fired when the train arrives. It also can be set to allow delays and platform alterations. 
+### Timer Container
+The Timer container stores the information about when the train will arrive/depart, how long the level will last until a fail occurs and which platform will the train arrive on. This is sent to the TimerDisplay BP and can be updated by events through the Event Manager. 
+### Guard/Ticket Booth
+The ticket booth and guard BP's are used to give imformation to the player. They can spawn tickets if the player shows them their bank card and will get the platform from the Timer Container. 
+### Ticket Machine
+The ticket machine is a simple UI on a 3d object which spawns a ticket when it detects a bank card swipe. 
+### Wallet
+The Wallet BP stores 2 types of object; TicketBP and BankCardBP. These can be taken and will return to the wallet upon being closed. 
+### Trains
+There is a single winning train BP (BP_Train) which is the goal the player needs to reach. The Static Trains are used for set dressing and the final train (BP_Plat1Train) will move similar to the winning train to make sure the player needs to remain alert to their correct platform and train arrival.  
+### Barriers
+Barriers take the ticket objects and open upon detecting it, they then despense the ticket beofre closing again.   
+### Tutorial points
+Tutorial points are interactbles which detect a VR hand object. Upon detecting the hand object they will play a denoted sound file which is based on the language selected. (language selection is stored in the gameinstance)
+### NPC's
+NPC's are randomised on creation and will have their skin, clothes and hair coulor randomised. There are 4 NPC's each with dofferent models. The NPCs can be randomly spawned using the NPC Spawner. 

@@ -7,12 +7,6 @@ This project contains all that is needed to build the app itself for the Oculus 
   <img src="interregLogo.png" width="400" title="hover text">
 </p>
 
-```bash
-Budget received from the France (Channel) England Programme: €4 million ERDF
-Total Project Budget: €5.79 million
-Project Duration: 3.5 years
-```
-
 ## About PONToon
 PONToon is an exciting project that will use a range of new and developing technologies such as games development, 3D/virtual reality, social media and web/mobile apps to engage, support and up-skill women in order to aid their employment opportunities.
 
@@ -34,7 +28,7 @@ Unreal version: 4.23.1
 Platforms    : Windows, Android, Oculus Quest
 ```
 
-## Use notes
+## Blueprint notes
 ### Event Manager BP
 The Event manager holds the information for the audio cues which will be fired when the train arrives. It also can be set to allow delays and platform alterations. 
 ### Timer Container
@@ -53,3 +47,6 @@ Barriers take the ticket objects and open upon detecting it, they then despense 
 Tutorial points are interactbles which detect a VR hand object. Upon detecting the hand object they will play a denoted sound file which is based on the language selected. (language selection is stored in the gameinstance)
 ### NPC's
 NPC's are randomised on creation and will have their skin, clothes and hair coulor randomised. There are 4 NPC's each with dofferent models. The NPCs can be randomly spawned using the NPC Spawner. 
+
+## Download
+To download and run this project download the .zip of source and open the project file using UE4. 

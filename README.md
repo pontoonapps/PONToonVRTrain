@@ -19,6 +19,10 @@ Total Project Budget: €5.79 million
 Project Duration: 3.5 years
 ```
 
+## More Information
+
+Visit our website for more information about the [PONToon Project](https://www.pontoonproject.eu/) 
+
 ## Prerequisites
 
 [Unreal Engine](https://www.unrealengine.com/en-US/download) is required to build the PONToon VR Train app.
